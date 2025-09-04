@@ -13,7 +13,7 @@ A command-line tool to fetch weather forecasts for multiple locations using the 
 
 1. Clone the repository:
    ```
-   git clone <your-repo-url>
+   git clone https://github.com/BrunoCandeias123/Open_Meteo
    cd Open_Meteo
    ```
 

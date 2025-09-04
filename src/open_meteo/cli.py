@@ -15,7 +15,6 @@ logging.basicConfig(level=logging.INFO)
 @click.option("--out", default="out.csv")
 def run(lat, lon, timezone, hourly, out):
     client = OpenMeteoGateway()
-    # if user passed comma separated, pass as CSV param:
     resp = client.get_forecast(latitude=lat, longitude=lon, timezone=timezone, hourly=hourly)
     rows = normalize_response(resp)
     write_csv_pandas(rows, out)
