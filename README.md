@@ -68,6 +68,7 @@ Open_Meteo/
 
 Run is done by the following order: cli >> gateway >> normalizer >> ingestor
 
+
 - `Gateway.py` 
 It connects to Open Meteo API, and selects the default variables. Output is in json file
 
