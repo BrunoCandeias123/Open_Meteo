@@ -66,6 +66,20 @@ Open_Meteo/
 └── README.md
 ```
 
+Run is done by the following order: cli >> gateway >> normalizer >> ingestor
+
+Gateway.py
+It connects to Open Meteo API, and selects the default variables. Output is in json file
+
+Normalizer.py
+Reads the json file, separates the dimensions into different columns and converts into digestable list format
+
+Ingestor.py
+Reads the list format and stores in csv
+
+cli.py
+Orchestrates the process and the user input
+
 
 ## Author
 
